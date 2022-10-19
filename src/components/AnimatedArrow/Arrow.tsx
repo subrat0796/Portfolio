@@ -5,7 +5,7 @@ import "./Arrow.css";
 const Arrow = () => {
 	return (
 		<div className="scroll-down" id="#breathing-button">
-			<a href="#" className="animate">
+			<a href="#nothing" className="animate">
 				Arrow
 			</a>
 		</div>
