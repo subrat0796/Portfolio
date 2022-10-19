@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { ReactComponent as Exclamation } from "../assets/Exclamation.svg";
+
 const Banner = () => {
 	const [email, setEmail] = useState("");
 
@@ -8,18 +10,22 @@ const Banner = () => {
 	};
 
 	return (
-		<div className="mx-auto my-2 h-[80%] w-10/12 flex justify-evenly items-center ">
+		<div className="mx-auto my-2 h-[80%] w-10/12 flex justify-evenly items-center">
 			{/* banner left */}
-			<div className=" w-1/2">
-				<h1 className="text-5xl font-bold w-7/12 text-white">
-					Talk is cheap Show me code !
+			<div className="w-1/2 mxl:w-full mxl:flex-col mxl:text-center">
+				<h1 className="text-5xl font-bold text-white mxl:mx-auto mxl:text-4xl">
+					Talk is cheap
 				</h1>
-				<p className="text-gray-300 min-w-min text-xs mt-3">
+				<h1 className="text-5xl font-bold text-white mxl:mx-auto flex items-center mxl:text-4xl mxl:justify-center">
+					Show me code
+					<Exclamation className="ml-1 mxl:text-3xl" />
+				</h1>
+				<p className="text-gray-300 min-w-min text-xs mt-3 mxl:text-xl">
 					I like to craft scalable and solid frontend product with great user
 					experience
 				</p>
 				{/* input and button */}
-				<div className="w-[300px] flex p-2 rounded-3xl border border-yellow mt-3">
+				<div className="w-[300px] flex p-2 rounded-3xl border border-yellow mt-3 mxl:mx-auto mxl:w-[200px]">
 					<input
 						type="text"
 						placeholder="abcd@gmail.com"
@@ -46,7 +52,7 @@ const Banner = () => {
 				</div>
 			</div>
 			{/* banner right */}
-			<div className="h-10 bg-white w-10"></div>
+			<div className="h-10 bg-white w-10 mxl:hidden"></div>
 		</div>
 	);
 };
