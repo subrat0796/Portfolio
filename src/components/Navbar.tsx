@@ -42,7 +42,7 @@ const Navbar = () => {
 
 				{/* nav menu */}
 				<div className="flex w-7/12 justify-end mxl:hidden">
-					<ul className="flex font-gilory w-[60%] font-bold align-middle justify-evenly xl:w-[40%]">
+					<ul className="flex font-inter font-semibold w-[60%] font-bold align-middle justify-evenly xl:w-[40%]">
 						<li className="my-auto text-white transition ease-in-out duration-200 hover:text-yellow">
 							About me
 						</li>
@@ -54,11 +54,11 @@ const Navbar = () => {
 						</li>
 					</ul>
 					{/* buttons */}
-					<div className="flex align-middle justify-center w-2/6">
-						<div className="text-[16px] text-center my-auto mx-2 transition ease-in-out duration-200 text-yellow font-bold rounded-3xl p-2 w-full bg-transparent border border-yellow hover:bg-yellow hover:text-black 2xl:text-[18px]">
+					<div className="flex align-middle  justify-center w-2/6">
+						<div className="text-[16px] text-center my-auto mx-2 transition ease-in-out duration-200 text-yellow font-inter font-bold rounded-3xl p-2 w-full bg-transparent border border-yellow hover:bg-yellow hover:text-black 2xl:text-[18px]">
 							Resume
 						</div>
-						<div className="text-[16px] text-center my-auto mx-2 transition ease-in-out duration-200 text-black font-bold rounded-3xl p-2 w-full bg-yellow border hover:bg-transparent hover:text-yellow 2xl:text-[18px]">
+						<div className="text-[16px] text-center my-auto mx-2 transition ease-in-out duration-200 text-black font-inter font-bold rounded-3xl p-2 w-full bg-yellow border hover:bg-transparent hover:text-yellow 2xl:text-[18px]">
 							Contact Me
 						</div>
 					</div>

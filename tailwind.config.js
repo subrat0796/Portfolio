@@ -26,6 +26,7 @@ module.exports = {
 			fontFamily: {
 				gilory: ["GLight", ...defaultTheme.fontFamily.sans],
 				giloryBold: ["GBold", "sans-serif"],
+				inter: ["Inter", "sans-serif"],
 			},
 			colors: {
 				yellow: "#B8E560",

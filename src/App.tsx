@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import CTASection from "./components/CTASection";
 import AboutMe from "./components/AboutMe";
 import MyWorks from "./components/MyWorks";
+import ContactMe from "./components/ContactMe";
 
 function App() {
 	return (
@@ -22,8 +23,9 @@ function App() {
 			<div className="bg-white h-[80vh]">
 				<AboutMe />
 			</div>
-			<div className="bg-lightOrange h-[110vh] mxl:h-min">
+			<div className="bg-lightOrange min-h-[110vh] mxl:h-min">
 				<MyWorks />
+				<ContactMe />
 			</div>
 		</div>
 	);

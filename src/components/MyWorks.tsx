@@ -51,13 +51,13 @@ const WorkData: WorkDataType[] = [
 const MyWorks = () => {
 	return (
 		<div className="h-[100%] w-10/12 mx-auto flex flex-col items-center justify-evenly">
-			<div>
+			<div className="mt-16">
 				<p className="text-darkGray text-center mxl:mt-6">My works</p>
 				<h1 className="text-darkBlue w-[60%] text-6xl mx-auto text-center font-giloryBold m2xl:text-5xl mxl:text-4xl mxl:w-full">
 					Discover my previous work experience
 				</h1>
 			</div>
-			<div className="flex items-center justify-evenly w-[90%] mxl:flex-col">
+			<div className="flex items-center mt-16 justify-evenly w-[90%] mxl:flex-col">
 				{WorkData.map(
 					({
 						descriptionOne,
