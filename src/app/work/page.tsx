@@ -13,47 +13,54 @@ const Page = () => {
   return (
     <>
       <NavBar />
-      <section id="" className="h-[90vh] w-[100vw] px-48">
+      <section
+        id=""
+        className="px-5 h-[70vh] sm:h-[90vh] sm:w-[100vw] sm:px-48 sm:max-w-[1336px] mx-auto"
+      >
         <div className="h-full w-full flex flex-col items-center justify-center gap-10 border-b">
-          <h2 className="text-red-300 text-8xl">I Work At KoinX ✌️</h2>
+          <h2 className="animate-pulse text-4xl text-red-300 sm:text-8xl">
+            I Work At KoinX ✌️
+          </h2>
         </div>
       </section>
 
-      <section className="h-[90vh] w-[100vw] px-48 pt-4">
+      <section className="px-5 sm:h-[90vh] sm:w-[100vw] sm:px-48 pt-4 sm:max-w-[1336px] mx-auto">
         <div className="h-full w-full border-b ">
-          <div className="flex pt-2 px-4 justify-between">
+          <div className="sm:flex pt-2 px-4 justify-between">
             <div className="flex gap-3 items-start">
-              <div className="h-6 w-6 bg-red-300 rounded-full"></div>
+              <div className="h-4 w-4 sm:h-6 sm:w-6 bg-red-300 rounded-full"></div>
               <div>
-                <h2 className="text-xl">KoinX Website</h2>
-                <h3 className="capitalize">CRYPTO TAXATION WEBSITE</h3>
+                <h2 className="text-base sm:text-xl">KoinX Website</h2>
+                <h3 className="text-base sm:capitalize">
+                  CRYPTO TAXATION WEBSITE
+                </h3>
               </div>
             </div>
             <div>
-              <h2 className="text-xl">
+              <h2 className="text-base sm:text-xl">
                 An application where users can file their crypto taxes
               </h2>
-              <div className="w-full">
+              <div className="sm:w-full">
                 <Link
                   href={"https://app.koinx.com"}
                   target="_blank"
-                  className="hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  className="animate-pulse hover:text-blue-300 transform ease-in-out transition-all delay-75"
                 >
                   👉 Website Link
                 </Link>
               </div>
             </div>
           </div>
-          <div className="relative flex items-center justify-center h-full">
+          <div className="sm:absolute flex sm:flex-row flex-col items-center justify-center h-full">
             <Image
-              className="absolute"
+              className="sm:relative sm:bottom-20 sm:left-0"
               height={700}
               width={900}
               src={KoinXDesktopImage1}
               alt="KoinX Desktop Image"
             />
             <Image
-              className="absolute -right-10 bottom-16"
+              className="sm:relative sm:-left-56 sm:-bottom-10"
               height={300}
               width={300}
               src={KoinXMobileImage1}

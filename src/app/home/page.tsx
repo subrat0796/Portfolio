@@ -19,31 +19,47 @@ const Page = () => {
       <NavBar />
 
       {/* Intro section */}
-      <section id="intro" className="h-[90vh] w-[100vw] px-48">
+      <section
+        id="intro"
+        className="h-[70vh] min-w-[400px] px-5 mx-auto sm:h-[90vh] sm:px-48 sm:max-w-[1336px]"
+      >
         <div className="h-full w-full flex items-center justify-center gap-10 border-b">
           <div>
-            <Image height={400} width={400} alt="Hero Image" src={HeroImage} />
+            <Image
+              height={400}
+              width={400}
+              alt="Hero Image"
+              src={HeroImage}
+              className="hidden sm:block"
+            />
           </div>
           <div>
-            <h2 className="text-red-300 text-8xl">Namaste !</h2>
+            <h2 className="text-red-300 text-6xl sm:text-8xl animate-pulse">
+              Namaste !
+            </h2>
             <h3 className="text-4xl">I am Subrat</h3>
             <h3 className="text-4xl">A Software Engineer From 🇮🇳</h3>
           </div>
         </div>
       </section>
 
-      <section id="projects" className="h-[90vh] w-[100vw] px-48 pt-4">
-        <div className="h-full w-full border-b ">
-          <div className="flex pt-2 px-4 justify-between">
+      <section
+        id="projects"
+        className="px-5 sm:h-[90vh] sm:px-48 sm:pt-4 sm:max-w-[1336px] mx-auto"
+      >
+        <div className="h-full w-full border-b">
+          <div className="sm:flex pt-2 px-4 justify-between">
             <div className="flex gap-3 items-start">
-              <div className="h-6 w-6 bg-red-300 rounded-full"></div>
+              <div className="h-4 w-4 sm:h-6 sm:w-6 bg-red-300 rounded-full"></div>
               <div>
-                <h2 className="text-xl">CRWN Clothing</h2>
-                <h3 className="capitalize">DESIGNER STORE WEBSITE</h3>
+                <h2 className="text-base sm:text-xl">CRWN Clothing</h2>
+                <h3 className="text-base sm:capitalize">
+                  DESIGNER STORE WEBSITE
+                </h3>
               </div>
             </div>
             <div>
-              <h2 className="text-xl">
+              <h2 className="text-base sm:text-xl">
                 An application where users can buy clothing from the latest
                 stores
               </h2>
@@ -51,30 +67,30 @@ const Page = () => {
                 <Link
                   href={"https://github.com/subrat0796/crwn-clothing"}
                   target="_blank"
-                  className="hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  className="animate-pulse hover:text-blue-300 transform ease-in-out transition-all delay-75"
                 >
                   👉 Github Link
                 </Link>
                 <Link
                   href={"https://delightful-frangollo-a369d4.netlify.app/"}
                   target="_blank"
-                  className="ml-10 hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  className="animate-pulse ml-10 hover:text-blue-300 transform ease-in-out transition-all delay-75"
                 >
                   👉 Website Link
                 </Link>
               </div>
             </div>
           </div>
-          <div className="relative flex items-center justify-center h-full">
+          <div className="sm:absolute flex sm:flex-row flex-col items-center justify-center h-full">
             <Image
-              className="absolute left-0"
+              className="sm:relative sm:bottom-10 sm:left-0"
               height={600}
               width={900}
               src={CrwnClothingDesktopImage1}
               alt="Crwn Clothing Desktop Image"
             />
             <Image
-              className="absolute -right-10 bottom-20"
+              className="sm:relative sm:-left-40"
               height={300}
               width={300}
               src={CrwnClothingMobileImage1}
@@ -84,66 +100,74 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="h-[100vh] w-[100vw] px-48 pt-4">
-        <div className="h-full w-full border-b ">
-          <div className="flex pt-2 px-4 justify-between">
+      <section className="px-5 sm:h-[100vh] sm:px-48 sm:pt-4 max-w-[1336px] mx-auto">
+        <div className="h-full w-full border-b">
+          <div className="sm:flex pt-2 px-4 justify-between">
             <div className="flex gap-3 items-start">
-              <div className="h-6 w-6 bg-blue-300"></div>
+              <div className="h-4 w-4 sm:h-6 sm:w-6 bg-blue-300"></div>
               <div>
-                <h2 className="text-xl">LeetCode Extension</h2>
-                <h3 className="capitalize">PRACTISING WEBSITE FOR CODERS</h3>
+                <h2 className="text-base sm:text-xl">LeetCode Extension</h2>
+                <h3 className="text-base sm:capitalize">
+                  PRACTISING WEBSITE FOR CODERS
+                </h3>
               </div>
             </div>
             <div>
-              <h2 className="text-xl">
+              <h2 className="text-base sm:text-xl">
                 An application where users can practice questions just before
                 interviews
               </h2>
-              <div className="gap-10 w-full">
-                <Link
-                  href={
-                    "https://github.com/subrat0796/LeetCode-Extension-Frontend"
-                  }
-                  target="_blank"
-                  className="hover:text-blue-300 transform ease-in-out transition-all delay-75"
-                >
-                  👉 Github Frontend Link
-                </Link>
-                <Link
-                  href={
-                    "https://github.com/subrat0796/LeetCode-Extension-Backend"
-                  }
-                  target="_blank"
-                  className="hover:text-blue-300 transform ease-in-out transition-all delay-75 ml-10"
-                >
-                  👉 Github Backend Link
-                </Link>
-                <Link
-                  href={
-                    "https://leet-code-extension-frontend-beta.vercel.app/sign-up"
-                  }
-                  target="_blank"
-                  className="ml-10 hover:text-blue-300 transform ease-in-out transition-all delay-75"
-                >
-                  👉 Website Link
-                </Link>
+              <div className="sm:gap-10 w-full sm:flex">
+                <div className="sm:w-full">
+                  <Link
+                    href={
+                      "https://github.com/subrat0796/LeetCode-Extension-Frontend"
+                    }
+                    target="_blank"
+                    className="animate-pulse hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  >
+                    👉 Github Frontend Link
+                  </Link>
+                </div>
+                <div className="sm:w-full">
+                  <Link
+                    href={
+                      "https://github.com/subrat0796/LeetCode-Extension-Backend"
+                    }
+                    target="_blank"
+                    className="animate-pulse hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  >
+                    👉 Github Backend Link
+                  </Link>
+                </div>
+                <div className="sm:w-full">
+                  <Link
+                    href={
+                      "https://leet-code-extension-frontend-beta.vercel.app/sign-up"
+                    }
+                    target="_blank"
+                    className="animate-pulse hover:text-blue-300 transform ease-in-out transition-all delay-75"
+                  >
+                    👉 Website Link
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="relative flex items-center justify-center h-full">
+          <div className="sm:absolute flex sm:flex-row flex-col items-center justify-center h-full">
             <Image
-              className="absolute right-0"
-              height={600}
-              width={900}
-              src={LeetCodeExtensionDesktopImage1}
-              alt="LeetCode Extension Desktop Image 1"
-            />
-            <Image
-              className="absolute -left-10 bottom-24"
+              className="sm:relative sm:-bottom-44 sm:z-10"
               height={300}
               width={300}
               src={LeetCodeExtensionDesktopImage2}
               alt="LeetCode Extension Desktop Image 2"
+            />
+            <Image
+              className="sm:relative sm:-left-44"
+              height={600}
+              width={900}
+              src={LeetCodeExtensionDesktopImage1}
+              alt="LeetCode Extension Desktop Image 1"
             />
           </div>
         </div>
