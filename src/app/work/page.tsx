@@ -27,7 +27,7 @@ const Page = () => {
       <section className="px-5 sm:h-[90vh] sm:w-[100vw] sm:px-48 pt-4 sm:max-w-[1336px] mx-auto">
         <div className="h-full w-full border-b ">
           <div className="sm:flex pt-2 px-4 justify-between">
-            <div className="flex gap-3 items-start">
+            <div className="flex gap-3 items-start" data-aos="fade-down-right">
               <div className="h-4 w-4 sm:h-6 sm:w-6 bg-red-300 rounded-full"></div>
               <div>
                 <h2 className="text-base sm:text-xl">KoinX Website</h2>
@@ -36,7 +36,7 @@ const Page = () => {
                 </h3>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-down-left">
               <h2 className="text-base sm:text-xl">
                 An application where users can file their crypto taxes
               </h2>
@@ -58,6 +58,7 @@ const Page = () => {
               width={900}
               src={KoinXDesktopImage1}
               alt="KoinX Desktop Image"
+              data-aos="zoom-in-right"
             />
             <Image
               className="sm:relative sm:-left-56 sm:-bottom-10"
@@ -65,6 +66,7 @@ const Page = () => {
               width={300}
               src={KoinXMobileImage1}
               alt="KoinX Mobile Image"
+              data-aos="zoom-in-left"
             />
           </div>
         </div>

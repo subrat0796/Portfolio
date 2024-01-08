@@ -31,9 +31,10 @@ const Page = () => {
               alt="Hero Image"
               src={HeroImage}
               className="hidden sm:block"
+              data-aos="zoom-in-right"
             />
           </div>
-          <div>
+          <div data-aos="zoom-in-left">
             <h2 className="text-red-300 text-6xl sm:text-8xl animate-pulse">
               Namaste !
             </h2>
@@ -49,7 +50,7 @@ const Page = () => {
       >
         <div className="h-full w-full border-b">
           <div className="sm:flex pt-2 px-4 justify-between">
-            <div className="flex gap-3 items-start">
+            <div className="flex gap-3 items-start" data-aos="fade-down-right">
               <div className="h-4 w-4 sm:h-6 sm:w-6 bg-red-300 rounded-full"></div>
               <div>
                 <h2 className="text-base sm:text-xl">CRWN Clothing</h2>
@@ -58,7 +59,7 @@ const Page = () => {
                 </h3>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-down-left">
               <h2 className="text-base sm:text-xl">
                 An application where users can buy clothing from the latest
                 stores
@@ -88,6 +89,7 @@ const Page = () => {
               width={900}
               src={CrwnClothingDesktopImage1}
               alt="Crwn Clothing Desktop Image"
+              data-aos="zoom-in-right"
             />
             <Image
               className="sm:relative sm:-left-40"
@@ -95,6 +97,7 @@ const Page = () => {
               width={300}
               src={CrwnClothingMobileImage1}
               alt="Crwn Clothing Mobile Image"
+              data-aos="zoom-in-left"
             />
           </div>
         </div>
@@ -103,7 +106,7 @@ const Page = () => {
       <section className="px-5 sm:h-[100vh] sm:px-48 sm:pt-4 max-w-[1336px] mx-auto">
         <div className="h-full w-full border-b">
           <div className="sm:flex pt-2 px-4 justify-between">
-            <div className="flex gap-3 items-start">
+            <div className="flex gap-3 items-start" data-aos="fade-down-right">
               <div className="h-4 w-4 sm:h-6 sm:w-6 bg-blue-300"></div>
               <div>
                 <h2 className="text-base sm:text-xl">LeetCode Extension</h2>
@@ -112,7 +115,7 @@ const Page = () => {
                 </h3>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-down-left">
               <h2 className="text-base sm:text-xl">
                 An application where users can practice questions just before
                 interviews
@@ -161,6 +164,7 @@ const Page = () => {
               width={300}
               src={LeetCodeExtensionDesktopImage2}
               alt="LeetCode Extension Desktop Image 2"
+              data-aos="zoom-in-right"
             />
             <Image
               className="sm:relative sm:-left-44"
@@ -168,6 +172,7 @@ const Page = () => {
               width={900}
               src={LeetCodeExtensionDesktopImage1}
               alt="LeetCode Extension Desktop Image 1"
+              data-aos="zoom-in-left"
             />
           </div>
         </div>
